@@ -10,8 +10,26 @@
 
 @theme {
     --font-sans: "Plus Jakarta Sans", sans-serif;
+
+    --container-area: 86rem;
+
+    --color-primary: #ffffff;
+    --color-inactive-header-nav: #737987;
+    --color-active-header-nav: #737987;
+
+    --text-title: clamp(48px, 5vw, 76px);
+    --text-heading: ;
+    --text-subheading: ;
+    --text-body: 16px;
+    --text-label: 12px;
+    --text-caption: 13px;
 }
 
-:root{
-    font-family:var(--font-sans)
+:root {
+    font-family: var(--font-sans)
+}
+
+@utility logo {
+    font-size: 25px;
+    font-weight: 700;
 }
