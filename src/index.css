@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 @utility custom-utility {
     display: flex;
     align-items: center;
@@ -7,6 +9,9 @@
 }
 
 @theme {
-    --color-card: #f7f4ef;
-     --breakpoint-sm:460px
+    --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+:root{
+    font-family:var(--font-sans)
 }
