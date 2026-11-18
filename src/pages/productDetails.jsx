@@ -1,7 +1,15 @@
-export function ProductDetails() {
+import { Header } from "../components/header";
+import { ProductInfo } from "../components/product/productInfo";
+
+
+export function ProductDetails({ product }) {
+
     return (
         <>
-this is product page
+            <Header />
+            <main className=" max-w-area mx-auto">
+                <ProductInfo product={product} />
+            </main>
         </>
     )
 }
