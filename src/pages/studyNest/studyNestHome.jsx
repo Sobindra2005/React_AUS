@@ -1,7 +1,7 @@
 import "./studynest.css"
 import Features from '../components/features'
 import Footer from '../components/footer'
-import Header from '../components/header'
+import Header from '../../components/header'
 import Hero from '../components/hero'
 
 export default function StudyNest() {
