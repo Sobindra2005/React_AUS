@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@utility custom-utility {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@theme {
+    --color-card: #f7f4ef;
+     --breakpoint-sm:460px
+}

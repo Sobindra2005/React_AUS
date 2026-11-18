@@ -31,12 +31,12 @@ export default function Hero() {
             </div>
 
             <div className="hero-card" aria-label="Study dashboard preview">
-                <div className="mini-card top-card">
+                <div className="mini-card top-card bg-card">
                     <span>Weekly focus</span>
                     <strong>85%</strong>
                 </div>
 
-                <div className="mini-card chart-card">
+                <div className="mini-card chart-card bg-card">
                     <span>Study hours</span>
                     <div className="bars">
                         <i className="bar-one" />
@@ -47,7 +47,7 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className="mini-card task-card">
+                <div className="mini-card task-card bg-card">
                     <span>Today</span>
                     <ul>
                         <li>Read chapter 4</li>
