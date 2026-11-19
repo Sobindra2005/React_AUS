@@ -7,6 +7,7 @@ import {
     MessageCircle,
 } from "lucide-react";
 
+
 export default function FashionHero({ slide }) {
 
     return (
@@ -123,7 +124,7 @@ export default function FashionHero({ slide }) {
     );
 }
 
-function Benefit({
+export function Benefit({
     icon,
     title,
     description,

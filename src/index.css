@@ -14,11 +14,14 @@
     --container-area: 86rem;
 
     --color-primary: #ffffff;
+    --color-tags :#dedbdb;
+    --color-body-color:#6b7280;
     --color-inactive-header-nav: #737987;
     --color-active-header-nav: #737987;
+    --color-borderColor:#d1d5dc
 
     --text-title: clamp(48px, 5vw, 76px);
-    --text-heading: ;
+    --text-heading: 37px;
     --text-subheading: ;
     --text-body: 16px;
     --text-label: 12px;

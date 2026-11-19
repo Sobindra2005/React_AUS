@@ -48,7 +48,7 @@ export const product = {
     "description": "Experience the comfort and style of Vintage Men’s 3D Coogi-Style Black Gray Sweater XL 90s NWT Grunge Abstract 90s. Available now. Condition: New with tags",
     "shortDescription": "New with tags",
     "basePrice": 29.99,
-    "discountPercentage": 0,
+    "discountPercentage": 5,
     "category": "Sweaters",
     "brand": "etstei5",
     "totalStock": 168,
@@ -114,7 +114,7 @@ export const product = {
     "tags": [
         "11484"
     ],
-    "averageRating": 5,
+    "averageRating": 3,
     "numberOfReviews": 88,
     "youMayAlsoLike": [
         {
