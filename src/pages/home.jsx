@@ -2,7 +2,8 @@ import FashionHero from "../components/home/hero"
 import { heroSlides } from "../data"
 import { Header } from "../components/header"
 
-export function Home() {
+export function HomePage() {
+    
     return (
         <>
             {/* Navbar */}

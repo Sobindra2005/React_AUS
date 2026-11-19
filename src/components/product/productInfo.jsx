@@ -1,14 +1,25 @@
 import { Heart, Leaf, RefreshCw, ShoppingBag, Star, Truck } from "lucide-react"
 import { sortVariant } from "../../lib/utility";
 import { Benefit } from "../home/hero";
-
+import { useState } from "react";
 
 export function ProductInfo({ product }) {
-    const activeProduct = product.images[0];
-    const selectedSize = 'L'
+    const [selectedSize, setSelectedSize] = useState('L');
+    const [activeProduct, setActiveProduct] = useState(product.images[0]);
+
     const currentPrice = product.basePrice - ((product.discountPercentage / 100) * product.basePrice);
     const productVariants = product.variants.map((variant) => variant.attributes.Size)
     const variantList = sortVariant(productVariants)
+
+    function selectVariant(size) {
+
+        setSelectedSize(size)
+    }
+
+    function selectProduct(product) {
+        setActiveProduct(product)
+    }
+
     return (
         <div className="grid grid-cols-2  gap-14 mt-10">
             {/* left side */}
@@ -17,7 +28,7 @@ export function ProductInfo({ product }) {
                     {
                         product.images.map((product) => {
                             return (
-                                < button key={product._id} className="w-19 h-24 rounded-md">
+                                < button onClick={() => selectProduct(product)} key={product._id} className={`w-19 h-24 rounded-md ${activeProduct._id === product._id && 'border-2 border-black'}`}>
                                     <img className="w-full h-full rounded-md overflow-hidden object-cover object-center"
                                         src={product.url}
                                         alt={product.altText}
@@ -86,9 +97,10 @@ export function ProductInfo({ product }) {
                             {
                                 variantList.map((variant, index) => {
                                     return (
-                                        <button key={index} className={`p-3 border  w-18 rounded-md border-gray-300  font-bold ${selectedSize == variant ? 'text-white bg-black' : 'text-body bg-transparent'} `}>
+                                        <button onClick={() => selectVariant(variant)} key={index} className={`p-3 border  w-18 rounded-md border-gray-300  font-bold ${selectedSize == variant ? 'text-white bg-black' : 'text-body bg-transparent'} `}>
                                             {variant}
-                                        </button>)
+                                        </button>
+                                    )
                                 })
                             }
                         </div>
