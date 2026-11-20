@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 
 
-export default function FashionHero({ slide }) {
+export default function FashionHero({ slide, currentIndex, maxIndex }) {
 
     return (
         <main className="relative flex min-h-[calc(100vh-76px)] flex-1 items-center overflow-hidden">
@@ -86,8 +86,7 @@ export default function FashionHero({ slide }) {
                         </div>
 
                         <div className="flex flex-col items-center text-[11px] leading-[1.4] tracking-[1px] text-[#56677f]">
-                            <span>01 /</span>
-                            <span>04</span>
+                            <span className="text-xl"> 0{currentIndex}/ {maxIndex}</span>
                         </div>
 
                         <div className="flex h-[38px] w-[38px] items-center justify-center rounded-full border border-[#d8d8d8] text-[#778394]">
