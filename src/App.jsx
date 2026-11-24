@@ -1,6 +1,9 @@
 import './App.css'
+import { Cart } from './pages/cart'
 import { HomePage } from './pages/home'
 import MemoryMatch from './pages/Tasks/MemoryMatch'
+import MultiStepForm from './pages/Tasks/multiForm'
+import OTPVerification from './pages/Tasks/otpVerification'
 import RockPaperScissors from './pages/Tasks/rockPaperScissorsArena'
 
 function App() {
@@ -9,7 +12,7 @@ function App() {
       {/* <HomePage/> */}
       {/* <ProductDetails product={product} /> */}
       {/* <MemoryMatch/> */}
-      <RockPaperScissors />
+      <Cart />
     </section>
   )
 }
